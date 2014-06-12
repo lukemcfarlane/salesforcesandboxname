@@ -1,7 +1,7 @@
-My Chrome Extension
+Salesforce Sandbox Name
 ==============================
 
-Seed for a simple Chrome extension with a single content script.
+Simple Chrome extension that puts the Salesforce sandbox name into the tab title for convenience.
 
 Installation
 ------------
