@@ -1,0 +1,17 @@
+{
+	"manifest_version": 2,
+	"name": "Salesforce Sandbox Name",
+	"version": "1.0",
+	"description": "Puts the Sandbox name (if applicable) into the page title",
+	"permissions": [
+		"tabs",
+		"https://code.jquery.com/jquery-2.1.1.min.js"
+	],
+	"content_scripts": [{
+		"matches": ["https://*.salesforce.com/*", "https://*.force.com/*"],
+		"js": ["jquery-2.1.1.min.js", "contentScript.js"],
+		"run_at": "document_end"
+		// "run_at": "document_start"
+		// "run_at": "document_idle"
+	}]
+}
